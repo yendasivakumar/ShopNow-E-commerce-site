@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Monoton&family=Montserrat:wght@400;600&family=Poppins:wght@200;300;500&family=Source+Sans+Pro&family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.payment {
+  width: 30%;
+  margin: auto;
+  padding: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 50px;
+}
+.credit {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 25px);
+  width: 50%;
+  gap: 20px;
+  margin-top: 10px;
+}
+.credit > div > img {
+  width: 120%;
+  height: 100%;
+}
+
+input {
+  width: 100%;
+  height: 20px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+#month {
+  height: 20px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+#year {
+  height: 20px;
+  width: 120px;
+  margin-top: 20px;
+}
+#cvv {
+  width: 20%;
+  margin-top: 20px;
+}
+label {
+  font-weight: 500;
+}
+
+.expiry {
+  display: flex;
+  align-items: center;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+.customer-details {
+  margin-top: 30px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+@media all and (min-width: 700px) and (max-width: 900px) {
+  .payment {
+    width: 40%;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 700px) {
+  .payment {
+    width: 70%;
+  }
+}

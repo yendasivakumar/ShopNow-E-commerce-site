@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Monoton&family=Montserrat:wght@400;600&family=Poppins:wght@200;300;500&family=Source+Sans+Pro&family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+
+  width: 100%;
+}
+nav .logo {
+  color: white;
+  font-size: 30px;
+  transition: all 0.5s ease-in;
+  font-weight: 600;
+}
+nav .logo:hover {
+  color: rgb(124, 124, 230);
+}
+nav .logo span {
+  color: rgb(124, 124, 230);
+  transition: all 0.5s ease-in;
+}
+nav .logo span:hover {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0px 7px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 1px;
+}
+nav ul li a:hover {
+  color: rgb(124, 124, 230);
+}
+nav .menu-btn i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+
+@media all and (min-width: 500px) and (max-width: 940px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+  }
+  nav ul li {
+    margin: 40px 0px;
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 100px) and (max-width: 500px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+  }
+  nav ul li {
+    margin: 40px 0px;
+    font-size: 20px;
+  }
+}
+
+/* navbar ends */
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto, 100px);
+  justify-content: space-around;
+  width: 40%;
+  margin-left: 200px;
+}
+#cards > div {
+  display: flex;
+  padding: 20px;
+  justify-content: left;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.cartimg > img {
+  height: 100px;
+  width: 90%;
+}
+.info {
+  width: 90%;
+  margin-left: 10px;
+}
+.info > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info > div > h3 {
+  font-size: 17px;
+  font-weight: 400;
+}
+.info > div > h3 + h3 {
+  color: rgb(255, 115, 0);
+}
+.info > div + p {
+  font-size: 13px;
+  color: gray;
+}
+.info > div + p + div {
+  margin-top: 30px;
+}
+.info > div + p + div > button:first-child {
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  background-color: rgba(182, 151, 151, 0.354);
+}
+.info > div + p + div > button:last-child {
+  margin-left: 20px;
+  background-color: rgba(152, 202, 183, 0.479);
+  border: none;
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.info > div + p + div > button:hover {
+  background-color: black;
+  color: white;
+}
+
+.quant {
+  margin-left: 94%;
+  width: 4%;
+  color: black;
+}
+@media all and (min-width: 750px) and (max-width: 950px) {
+  #cards {
+    width: 50%;
+    margin-left: 10px;
+  }
+  .info > div > h3 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+/* med small screens */
+@media all and (min-width: 450px) and (max-width: 750px) {
+  #cards {
+    width: 90%;
+    margin: auto;
+  }
+  .info > div > h3 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 450px) {
+  #cards {
+    width: 95%;
+    margin: auto;
+  }
+  .info > div > h3 {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .info > div + p + div > button:first-child {
+    border: none;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .info > div + p + div > button:last-child {
+    margin-left: 5px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(186, 186, 186, 0.66),
+      rgb(239, 231, 231)
+    );
+    border: none;
+    padding: 2px 4px 2px 4px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .info {
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+
+#cartitem {
+  display: flex;
+}
+#bill {
+  margin-left: 100px;
+  width: 30%;
+  height: 350px;
+  background-color: #1b1b1b;
+  color: rgb(233, 230, 230);
+  margin-top: 30px;
+}
+
+#subamount {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#subtotal {
+  padding-right: 20px;
+}
+.summary {
+  display: flex;
+  background-color: black;
+  padding: 20px 0px 20px 0px;
+  justify-content: space-between;
+}
+.summary > h3 {
+  padding: 0px 20px 0px 20px;
+}
+#carttotal {
+  color: rgb(255, 145, 0);
+}
+#carttotal > span {
+  color: wheat;
+}
+.promo {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 5px 10px;
+  padding-left: 20px;
+}
+.promo > input {
+  padding-left: 10px;
+}
+.promo > button {
+  padding: 2px 5px 2px 5px;
+  width: 30%;
+  margin-left: 10px;
+  background-color: white;
+}
+#shipping {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+
+#finalTotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 20px 20px;
+}
+
+#checkout > button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 80px 10px 80px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 187, 0, 0.74),
+    rgb(255, 115, 0)
+  );
+  cursor: pointer;
+}
+
+@media all and (min-width: 750px) and (max-width: 950px) {
+  #bill {
+    margin-left: 50px;
+    width: 38%;
+    height: 350px;
+    margin-top: 30px;
+  }
+  .promo {
+    padding: 10px 0px 5px 10px;
+    padding-left: 15px;
+  }
+  .promo > input {
+    padding-left: 0px;
+  }
+  .promo > button {
+    padding: 2px 5px 2px 5px;
+    width: 30%;
+    margin-left: 5px;
+    background-color: white;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  #cartitem {
+    display: block;
+  }
+  #bill {
+    margin-left: 50px;
+    width: 80%;
+    height: 350px;
+
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 500px) {
+  #cartitem {
+    display: block;
+  }
+  #bill {
+    margin-left: 50px;
+    width: 94%;
+    height: 350px;
+
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .promo {
+    padding: 10px 0px 5px 10px;
+    padding-left: 5px;
+  }
+}

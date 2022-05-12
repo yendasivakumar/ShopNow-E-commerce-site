@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .otpdiv {
+        width: 30%;
+        margin: auto;
+        margin-top: 50px;
+        padding: 20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      .sendotp {
+        display: block;
+        margin: auto;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(255, 187, 0, 0.74),
+          rgb(255, 115, 0)
+        );
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px 10px 5px 10px;
+      }
+
+      button + p {
+        text-align: center;
+        font-weight: 600;
+      }
+      #otp {
+        width: 90%;
+        display: block;
+        margin: auto;
+        height: 20px;
+        padding-left: 3px;
+      }
+
+      .continue {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        padding: 5px 10px 5px 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+      }
+
+      @media all and (min-width: 500px) and (max-width: 800px) {
+        .otpdiv {
+          width: 40%;
+        }
+      }
+      @media all and (min-width: 100px) and (max-width: 500px) {
+        .otpdiv {
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="otpdiv">
+      <button class="sendotp">Click Here to get OTP</button>
+      <p>(or)</p>
+      <input type="text" name="" id="otp" placeholder="Enter OTP" />
+      <button class="continue">Continue</button>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector(".sendotp ").addEventListener("click", function () {
+    var val = Math.floor(1000 + Math.random() * 9000);
+    alert("Your OTP is " + val);
+  });
+
+  document.querySelector(".continue").addEventListener("click", function () {
+    var otp = document.querySelector("#otp").value;
+    if (otp.length > 3 && otp.length < 5) {
+      alert("Payment Successful!");
+    } else {
+      alert("Invalid Otp");
+    }
+  });
+</script>

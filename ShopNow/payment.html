@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="payment">
+      <label for="">Card Number <span style="color: red">*</span></label>
+      <input type="text" name="" id="cardNumber" placeholder="" required />
+
+      <div class="credit">
+        <div>
+          <img
+            src="https://freepngimg.com/thumb/atm_card/12-2-atm-card-download-png.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://freepngimg.com/thumb/atm_card/3-2-atm-card-high-quality-png.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://freepngimg.com/thumb/atm_card/7-2-atm-card-png-clipart.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://freepngimg.com/thumb/atm_card/1-2-atm-card-png-picture.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="expiry">
+        <select name="" id="month">
+          <option value="#">Exp Month</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+
+        <select name="" id="year">
+          <option value="">Exp Year</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+          <option value="2031">2031</option>
+          <option value="2032">2032</option>
+          <option value="2033">2033</option>
+        </select>
+      </div>
+      <input type="text" name="" id="cvv" placeholder="cvv" required />
+
+      <div class="customer-details">
+        <h2>Customer Details</h2>
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Enter Name"
+          required
+        />
+        <input
+          type="number"
+          name=""
+          id="mobile"
+          placeholder="Mobile Number"
+          required
+        />
+      </div>
+      <button class="buynow">Buy Now</button>
+    </div>
+  </body>
+</html>
+<script src="payment.js"></script>

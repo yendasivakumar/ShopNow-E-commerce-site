@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cart.css" />
+    <script
+      src="https://kit.fontawesome.com/127eb51a96.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cart</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">Shop<span>Now</span></div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fav.html">Favourites</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li id="login"><a href="login.html">Login/Signup</a></li>
+      </ul>
+    </nav>
+    <!-- navbar ends -->
+
+    <div id="cartitem">
+      <div id="cards"></div>
+      <div id="bill">
+        <div class="summary">
+          <h3>SUMMARY</h3>
+          <h3 id="carttotal">Items(<span>n</span>)</h3>
+        </div>
+
+        <div class="promo">
+          <input type="text" name="" id="promo" placeholder="Promo Code" />
+          <button id="promo-btn">Apply</button>
+        </div>
+        <div id="subamount">
+          <p>Sub Total:</p>
+          <p id="subtotal">sub TOTAL</p>
+        </div>
+        <div id="shipping">
+          <p>Shipping Charges:</p>
+          <p>0.00</p>
+        </div>
+
+        <div id="finalTotal">
+          <p>Total:</p>
+          <p id="total">Total</p>
+        </div>
+
+        <div id="checkout">
+          <button>CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="cart.js"></script>

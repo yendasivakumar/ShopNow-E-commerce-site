@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Monoton&family=Montserrat:wght@400;600&family=Poppins:wght@200;300;500&family=Source+Sans+Pro&family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#form {
+  width: 40%;
+  margin-left: 50px;
+  margin: auto;
+  margin-top: 0px;
+  padding: 40px;
+}
+#form > label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+#form > input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 10px;
+  background-color: rgb(206, 217, 227);
+  border-radius: 5px;
+}
+#form > #sub {
+  width: 50%;
+  display: block;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+#payment > div {
+  margin-left: 20px;
+  height: 500px;
+  margin-top: 60px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#payment > div > img {
+  height: 100%;
+}
+
+@media all and (min-width: 550px) and (max-width: 900px) {
+  #form {
+    width: 60%;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 550px) {
+  #form {
+    width: 80%;
+  }
+}

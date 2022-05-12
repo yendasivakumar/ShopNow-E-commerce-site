@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Monoton&family=Montserrat:wght@400;600&family=Poppins:wght@200;300;500&family=Source+Sans+Pro&family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+
+  width: 100%;
+}
+nav .logo {
+  color: white;
+  font-size: 30px;
+  transition: all 0.5s ease-in;
+  font-weight: 600;
+}
+nav .logo:hover {
+  color: rgb(124, 124, 230);
+}
+nav .logo span {
+  color: rgb(124, 124, 230);
+  transition: all 0.5s ease-in;
+}
+nav .logo span:hover {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0px 7px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 1px;
+}
+nav ul li a:hover {
+  color: rgb(124, 124, 230);
+}
+nav .menu-btn i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+#click {
+  display: none;
+}
+
+@media all and (min-width: 500px) and (max-width: 940px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+  }
+  nav ul li {
+    margin: 40px 0px;
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 100px) and (max-width: 500px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #click:checked ~ ul {
+    left: 0%;
+  }
+  nav ul li {
+    margin: 40px 0px;
+    font-size: 20px;
+  }
+}
+
+/* navbar ends */
+
+/* sorting css */
+
+#sorting {
+  background-color: rgb(231, 231, 30);
+  display: flex;
+  height: 30px;
+  margin-top: 20px;
+}
+
+#sorting > select {
+  background-color: rgb(231, 231, 30);
+  margin-left: 20px;
+  border: none;
+}
+#sorting > select > option {
+  background-color: white;
+}
+
+.gif {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 30px);
+  width: 80%;
+  gap: 0px;
+  overflow-x: hidden;
+  background-color: red;
+}
+.gif > img {
+  height: 100%;
+}
+
+/* sorting css end  */
+
+#card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, auto);
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 50px;
+  gap: 20px;
+}
+#card > div {
+  height: auto;
+}
+#card > div > img {
+  width: 100%;
+  height: 60%;
+}
+#card > div > h2 + p {
+  color: gray;
+  font-size: 13px;
+}
+#card > div > button {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  border: none;
+  transition: all 0.5s;
+}
+#card > div > button:hover {
+  background-color: rgb(124, 124, 230);
+}
+#card > div > P + div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+#card > div > P + div > i {
+  margin-right: 20px;
+  font-size: 24px;
+  padding: 3px;
+  border-radius: 50%;
+}
+#card > div > div + p {
+  font-size: 12px;
+  color: grey;
+}
+
+@media all and (min-width: 650px) and (max-width: 850px) {
+  #card {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, auto);
+  }
+  #card > div {
+    margin-top: 24px;
+  }
+  #card > div > h2 {
+    font-size: 20px;
+  }
+  #card > div > h2 + p {
+    color: gray;
+    font-size: 13px;
+  }
+  #card > div > P + div {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  #card > div > P + div > i {
+    margin-right: 20px;
+    font-size: 22px;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 650px) {
+  #card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, auto);
+    width: 98%;
+    gap: 10px;
+  }
+  #card > div {
+    margin-top: 24px;
+  }
+  #card > div > h2 {
+    font-size: 16px;
+  }
+  #card > div > h2 + p {
+    color: gray;
+    font-size: 10px;
+  }
+  #card > div > P + div {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  #card > div > P + div > i {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  /* sorting  */
+  #sorting > select {
+    margin-left: 5px;
+  }
+  #sorting > select > option {
+    background-color: white;
+  }
+
+  .gif {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 30px);
+    width: 80%;
+    gap: 0px;
+    overflow-x: hidden;
+    background-color: red;
+  }
+  .gif > img {
+    height: 100%;
+  }
+}

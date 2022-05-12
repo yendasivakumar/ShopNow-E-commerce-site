@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Monoton&family=Montserrat:wght@400;600&family=Poppins:wght@200;300;500&family=Source+Sans+Pro&family=Ubuntu:wght@400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+div {
+  width: 30%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px 40px 20px 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+label {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+#sub {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+form + p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+form + p > a {
+  color: rgb(61, 61, 160);
+  font-weight: 600;
+}
+@media all and (min-width: 500px) and (max-width: 770px) {
+  div {
+    width: 50%;
+  }
+}
+@media all and (min-width: 100px) and (max-width: 500px) {
+  div {
+    width: 70%;
+  }
+}
