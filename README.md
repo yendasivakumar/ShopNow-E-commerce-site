@@ -27,6 +27,13 @@ User can add products into favourites
 User can add product into cart and when he/her try to add same product twice show a pop up.
 User can increase/remove count of products from cart page
 User can get discount of 15% of total price by applying "MASAI30" voucher code at checkout time.
+
+
+## Features
+
+- Responsive
+- Sort by product price
+- Filter by product name
  
 
 
